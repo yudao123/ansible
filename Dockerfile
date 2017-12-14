@@ -1,1 +1,1 @@
-FROM docker.io/centos:6.6
+FROM daocloud.io/library/nginx
