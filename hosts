@@ -1,2 +1,2 @@
 [ansiblehost]
-192.168.123.241
+192.168.123.241  username=root
