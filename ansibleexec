@@ -1,0 +1,2 @@
+FROM daocloud.io/library/ubuntu
+RUN  apt-get update && apt-get install python-pip && pip install robotframework && pip install robotframework-selenium2library
