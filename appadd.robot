@@ -11,11 +11,16 @@ host_healthy
     Click element    xpath=//div[@id='app']/div/nav/div[4]/div/div/span
      
     Sleep    1s
-    Click element    xpath=//div[@id='app']/div/div/div[2]/table/tbody/tr/td[4]/div/div[2]/div/button
+    Click element    xpath=//div[@id='app']/div/div/div[2]/div/button
     Sleep    1s
-   Click element    xpath=//div[4]/div/ul/li[6]
+    Click element    xpath=//div[@id='app']/div/div/div[2]/div[4]/div/div/div[2]/div/div/div[2]/div/div/div/div[2]
+    Click element    xpath=//div[@id='app']/div/div/div[2]/div[4]/div/div/div[3]/div/button
+    Click element    xpath=//div[@id='app']/div/div/div[2]/div/div[2]/div/div/div[2]/div[2]/div/div/div[17]/div/div/div/div[2]/div[3]
+    Click element    xpath=//div[@id='app']/div/div/div[2]/div/div[2]/div/div[2]/button
     Sleep    1s
-    Click element    xpath=//div[@id='app']/div/div/div[2]/div[3]/div[9]/div/div/div[3]/div/button[2]
-    Sleep    5s
-   
+    
+     Click element    xpath=/html/body/div[2]/div[1]/div/div[2]/div/div[2]/div[2]/div[3]/button[2]
+     Sleep    1s
+      Click element    xpath=/html/body/div[2]/div[1]/div/div[2]/div/div[2]/div[3]/div[2]/button[2]
+      Sleep    10s
      Close Browser
