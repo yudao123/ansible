@@ -9,6 +9,7 @@ host_healthy
     Click element    xpath=//*[@id="login"]/div/div[2]/div/div/button
     Sleep    2s
     Click element    xpath=//*[@id="app"]/div[1]/nav/div[7]/div/div/span[1]
+    Sleep    2s
     ${text}    Get Text    xpath=//*[@id="app"]/div[1]/div/div[2]/div[2]/div[2]/table/tbody/tr[1]/td[5]/div[1]/div/span
     Sleep    2s
     Should Contain    ${text}   健康
