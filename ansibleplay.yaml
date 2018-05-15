@@ -13,19 +13,11 @@
 - hosts: ansiblehost
   tasks:
   - name: copy test case
-    copy: src=host_healthy.robot dest=/var/jenkins_home/host_healthy.robot
-  - name: copy test case
-    copy: src=appadd.robot dest=/var/jenkins_home/appadd.robot
-  - name: copy test case
-    copy: src=appdelete.robot dest=/var/jenkins_home/appdelete.robot
+    copy: src=dcetest.robot dest=/var/jenkins_home/dcetest.robot
   - name: create result directory
     file: path=/var/jenkins_home/result state=directory
   - name: exec-checkhost
-    shell: robot --outputdir  /var/jenkins_home/result /var/jenkins_home/host_healthy.robot
-  - name: exec-appadd
-    shell: robot --outputdir  /var/jenkins_home/result /var/jenkins_home/appadd.robot
-  - name: exec-appdelete
-    shell: robot --outputdir  /var/jenkins_home/result /var/jenkins_home/appdelete.robot
+    shell: robot --outputdir  /var/jenkins_home/result /var/jenkins_home/dcetest.robot
   - name: fetch result
     fetch: src=/var/jenkins_home/result/output.xml dest=/var/jenkins_home/workspace/robot-framework flat=yes
   - name: fetch result
