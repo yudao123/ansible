@@ -14,6 +14,10 @@
   tasks:
   - name: copy test case
     copy: src=host_healthy.robot dest=/var/jenkins_home/host_healthy.robot
+  - name: copy test case
+    copy: src=host_healthy.robot dest=/var/jenkins_home/appadd.robot
+  - name: copy test case
+    copy: src=host_healthy.robot dest=/var/jenkins_home/appdelete.robot
   - name: create result directory
     file: path=/var/jenkins_home/result state=directory
   - name: exec
