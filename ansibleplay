@@ -1,0 +1,6 @@
+- hosts: dce
+  tasks:
+  - name: upgrade shell
+    shell: "docker run --rm daocloud.io/daocloud/dce:2.10.3-dev upgrade --force-pull| sed 's/-it/-t/g' > /var/tmp/upgrade_cluster.sh"
+  - name: upgrade
+    shell: bash /var/tmp/upgrade_cluster.sh
