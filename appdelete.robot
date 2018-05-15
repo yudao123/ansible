@@ -7,14 +7,14 @@ host_healthy
     Input Text    css=input[type=\"text\"]    admin
     Input Text    css=input[type=\"password\"]    admin
     Click element    xpath=//*[@id="login"]/div/div[2]/div/div/button
-    Sleep    1s
+    Sleep    2s
     Click element    xpath=//div[@id='app']/div/nav/div[4]/div/div/span
      
-    Sleep    1s
+    Sleep    2s
     Click element    xpath=//div[@id='app']/div/div/div[2]/table/tbody/tr/td[4]/div/div[2]/div/button
-    Sleep    1s
+    Sleep    2s
    Click element    xpath=//div[4]/div/ul/li[6]
-    Sleep    1s
+    Sleep    2s
     Click element    xpath=//div[@id='app']/div/div/div[2]/div[3]/div[9]/div/div/div[3]/div/button[2]
     Sleep    5s
    
