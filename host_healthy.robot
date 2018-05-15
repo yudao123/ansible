@@ -3,7 +3,7 @@ Library           Selenium2Library
 
 *** Test Cases ***
 host_healthy
-    Open Browser    https://192.168.123.170/#/dashboard    browser=firefox    remote_url=http://192.168.123.169:4444/wd/hub
+    Open Browser    https://192.168.124.145/#/dashboard    browser=firefox    remote_url=http://192.168.123.169:4444/wd/hub
     Input Text    css=input[type=\"text\"]    admin
     Input Text    css=input[type=\"password\"]    admin
     Click element    xpath=//*[@id="login"]/div/div[2]/div/div/button
