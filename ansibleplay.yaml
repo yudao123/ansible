@@ -20,11 +20,11 @@
     copy: src=host_healthy.robot dest=/var/jenkins_home/appdelete.robot
   - name: create result directory
     file: path=/var/jenkins_home/result state=directory
-  - name: exec
+  - name: exec-checkhost
     shell: robot --outputdir  /var/jenkins_home/result /var/jenkins_home/host_healthy.robot
-  - name: exec
+  - name: exec-appadd
     shell: robot --outputdir  /var/jenkins_home/result /var/jenkins_home/appadd.robot
-  - name: exec
+  - name: exec-appdelete
     shell: robot --outputdir  /var/jenkins_home/result /var/jenkins_home/appdelete.robot
   - name: fetch result
     fetch: src=/var/jenkins_home/result/output.xml dest=/var/jenkins_home/workspace/robot-framework flat=yes
