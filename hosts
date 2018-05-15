@@ -1,3 +1,6 @@
 [ansiblehost]
 192.168.124.145  ansible_ssh_user=root  ansible_ssh_pass=root   ansible_ssh_port=32413
  
+[dce]
+192.168.124.93  ansible_ssh_user=root  ansible_ssh_pass=dangerous   
+ 
