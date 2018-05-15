@@ -1,3 +1,3 @@
 [ansiblehost]
-192.168.124.147  ansible_ssh_user=root  ansible_ssh_pass=root   ansible_ssh_port=32413
+192.168.124.145  ansible_ssh_user=root  ansible_ssh_pass=root   ansible_ssh_port=32413
  
