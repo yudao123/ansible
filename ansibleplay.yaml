@@ -22,6 +22,10 @@
     file: path=/var/jenkins_home/result state=directory
   - name: exec
     shell: robot --outputdir  /var/jenkins_home/result /var/jenkins_home/host_healthy.robot
+  - name: exec
+    shell: robot --outputdir  /var/jenkins_home/result /var/jenkins_home/appadd.robot
+  - name: exec
+    shell: robot --outputdir  /var/jenkins_home/result /var/jenkins_home/appdelete.robot
   - name: fetch result
     fetch: src=/var/jenkins_home/result/output.xml dest=/var/jenkins_home/workspace/robot-framework flat=yes
   - name: fetch result
