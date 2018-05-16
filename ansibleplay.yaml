@@ -7,8 +7,12 @@
 
 - hosts: localhost
   tasks:
-  - name: create result directory
-    file: path=/var/jenkins_home/result state=directory
+  - name: delete old result
+    file: path=/var/jenkins_home/workspace/robot-framework/output.xml state=absent
+  - name: delete old result
+    file: path=/var/jenkins_home/workspace/robot-framework/report.html state=absent
+  - name: delete old result
+    file: path=/var/jenkins_home/workspace/robot-framework/log.html state=absent
 
 - hosts: ansiblehost
   tasks:
