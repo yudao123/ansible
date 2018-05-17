@@ -22,7 +22,7 @@ appadd
     Sleep    1s
     Click element    xpath=//div[@id='app']/div/nav/div[4]/div/div/span
      
-    Sleep    4s
+    Sleep    2s
     Click element    xpath=//div[@id='app']/div/div/div[2]/div/button
     Sleep    1s
     Click element    xpath=//div[@id='app']/div/div/div[2]/div[4]/div/div/div[2]/div/div/div[2]/div/div/div/div[2]
