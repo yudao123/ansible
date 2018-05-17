@@ -30,11 +30,12 @@ appadd
     Sleep    1s
     Click element    xpath=//div[@id='app']/div/div/div[2]/div[4]/div/div/div[3]/div/button
     Click element    xpath=//div[@id='app']/div/div/div[2]/div/div[2]/div/div/div[2]/div[2]/div/div/div[17]/div/div/div/div[2]/div[3]
+    Sleep    2s
     Click element    xpath=//div[@id='app']/div/div/div[2]/div/div[2]/div/div[2]/button
     Sleep    2s
     
      Click element    xpath=/html/body/div[2]/div[1]/div/div[2]/div/div[2]/div[2]/div[3]/button[2]
-     Sleep    1s
+     Sleep    2s
       Click element    xpath=/html/body/div[2]/div[1]/div/div[2]/div/div[2]/div[3]/div[2]/button[2]
       Sleep    10s
      Close Browser
