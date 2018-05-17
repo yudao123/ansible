@@ -20,7 +20,7 @@ appadd
     Input Text    css=input[type=\"password\"]    admin
     Click element    xpath=//*[@id="login"]/div/div[2]/div/div/button
     Sleep    1s
-    Click element    xpath=/html/body/div[2]/div[1]/nav/div[4]/div/div/span[1]
+    Click element    xpath=//div[@id='app']/div/nav/div[4]/div/div/span
 
      
     Sleep    1s
