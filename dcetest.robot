@@ -21,6 +21,7 @@ appadd
     Click element    xpath=//*[@id="login"]/div/div[2]/div/div/button
     Sleep    1s
     Click element    xpath=/html/body/div[2]/div[1]/nav/div[4]/div/div/span[1]
+    Log    error
      
     Sleep    1s
     Click element    xpath=//div[@id='app']/div/div/div[2]/div/button
